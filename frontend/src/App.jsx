@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 import { HomeScreen } from "./screens/HomeScreen";
 
 import { Route, Routes } from "react-router-dom";
+import { ProductScreen } from "./screens/ProductScreen";
 
 export const App = () => {
   return (
@@ -13,6 +14,7 @@ export const App = () => {
         <Container>
           <Routes>
             <Route path="/" element={<HomeScreen />} />
+            <Route path="/product/:id" element={<ProductScreen />} />
           </Routes>
         </Container>
       </main>
