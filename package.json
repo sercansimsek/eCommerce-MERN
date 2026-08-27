@@ -1,0 +1,30 @@
+{
+  "name": "ecommerce-mern",
+  "version": "1.0.0",
+  "description": "eCommerce application built with the MERN stack",
+  "homepage": "https://github.com/sercansimsek/eCommerce-MERN#readme",
+  "bugs": {
+    "url": "https://github.com/sercansimsek/eCommerce-MERN/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sercansimsek/eCommerce-MERN.git"
+  },
+  "license": "ISC",
+  "author": "Sercan",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5",
+    "nodemon": "^3.1.14"
+  }
+}
